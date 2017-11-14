@@ -54,7 +54,7 @@ Material utilizado na última aula da Disciplina: **Programação Mobile (Xamari
 
 ![Tela de Menu de Opções](CrudMVVM/Imagens/PageDatePicker.JPG)
 
-**Tela utilizando o DatePicker do Xamarin.Forms**
+**Tela utilizando o TimePicker do Xamarin.Forms**
 
 * Opção de utilizar o Regolio ou digitar a hora para preencher o campo.
 
@@ -68,7 +68,7 @@ Material utilizado na última aula da Disciplina: **Programação Mobile (Xamari
   * https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/
 * **Xamarin: MVVM**
   * https://developer.xamarin.com/guides/xamarin-forms/xaml/xaml-asics/data_bindings_to_mvvm/
-* *Xamarin: SQLite*
+* **Xamarin: SQLite**
   * https://developer.xamarin.com/guides/android/application_fundamentals/data/part_3_using_sqlite_orm/
 * **Web Service : Rest**
   * https://developer.xamarin.com/guides/xamarin-forms/cloud-services/consuming/rest/
