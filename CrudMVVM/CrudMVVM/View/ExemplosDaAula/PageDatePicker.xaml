@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrudMVVM.View.ExemplosDaAula.PageDatePicker">
+    <ContentPage.Content>
+  
+        <StackLayout Padding="10,10,10,10">
+            <Label Text="Exemplo de Calendario e Relogio"   VerticalOptions="Center" BackgroundColor="WhiteSmoke"    HorizontalOptions="Center"      FontSize="Large"/>
+
+            <Label Text="Controle Data e Hora" TextColor="Yellow" FontSize="Large"/>
+
+            <Label Text="Digite a data ou selecione no calendario"/>
+            <DatePicker Format="dd/MM/yyyy" />
+
+            <Label Text="Digite a hora"/>
+            <TimePicker Format="hh:mm" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

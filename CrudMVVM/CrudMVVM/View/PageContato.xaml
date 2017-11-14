@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrudMVVM.View.PageContato"
+             x:Name="PageContato"
+             xmlns:convert="clr-namespace:assembly=CrudMVVM">
+             
+    <ContentPage.Content>
+        <StackLayout Padding="10, 10, 10, 10">
+            <Label Text="Cadastro de Contato" HorizontalOptions="StartAndExpand" FontAttributes="Bold" BackgroundColor="WhiteSmoke" TextColor="DarkBlue" FontSize="18"></Label>
+            <StackLayout  BackgroundColor="WhiteSmoke" Spacing="20">
+                <Entry x:Name="Nome"     Text="{Binding ContatoAtual.Nome}"    Placeholder="Digite o nome" ></Entry>
+                <Entry x:Name="Email"    Text="{Binding ContatoAtual.Email}"    Placeholder="Digite o Email" Keyboard="Email"></Entry>
+                <Entry x:Name="Telefone" Text="{Binding ContatoAtual.Telefone}" Placeholder="Digite o Telefone" Keyboard="Telephone"></Entry>
+            </StackLayout>
+            <StackLayout >
+                <Button x:Name="Salvar" Text="Salvar  " FontSize="12"  BorderColor="White" HorizontalOptions="EndAndExpand" Command="{Binding SalvarContatoCommand}"></Button>
+            </StackLayout>
+
+
+          <StackLayout>
+                <Label Text="Lista de Contatos" HorizontalOptions="StartAndExpand" FontAttributes="Bold" BackgroundColor="WhiteSmoke"  TextColor="DarkBlue" FontSize="18"/>
+                <ListView x:Name="Contatos" ItemsSource="{Binding Contatos}" HasUnevenRows="True" Grid.Row="3">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Excluir" Command="{Binding Source={x:Reference PageContato}, Path=BindingContext.ExcluirContatoCommand}" CommandParameter="{Binding .}"></MenuItem>
+                                    <MenuItem Text="Editar"  Command="{Binding Source={x:Reference PageContato},  Path=BindingContext.EditarContatoCommand}" CommandParameter="{Binding .}"></MenuItem>
+                                </ViewCell.ContextActions>
+                                <ViewCell.View>
+                                    <Grid ColumnSpacing="0" RowSpacing="0" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Label Grid.Row="0"     Grid.Column="0" Text="{Binding Nome}"    FontAttributes="Bold"  FontSize="15"    TextColor="#065C2B"/>
+                                            <Label Grid.Row="1"     Grid.Column="0" Text="{Binding Email}"         TextColor="Black"/>
+                                            <Label Grid.Row="1"     Grid.Column="1" Text="{Binding Telefone}"      TextColor="Black"/>
+                                </Grid>
+
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+              </ListView>
+        </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

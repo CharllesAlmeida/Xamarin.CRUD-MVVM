@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrudMVVM.View.ExemplosDaAula.PagePicker">
+    <ContentPage.Content>
+        <StackLayout  Padding="10,10,10,10">
+            <Label Text="Selecione uma empresa:"/>
+            <Picker>
+                <Picker.Items>
+                    <x:String>Google</x:String>
+                    <x:String>Micrsoft</x:String>
+                    <x:String>Oracle</x:String>
+                </Picker.Items>
+
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

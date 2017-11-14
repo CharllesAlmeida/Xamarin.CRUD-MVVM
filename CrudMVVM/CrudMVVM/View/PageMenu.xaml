@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrudMVVM.View.PageMenu"
+             x:Name="PageMenu">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="CrudMVVM"            Text="CRUD-MVVM"                 Activated="CrudMVVM_Activated"                 Order="Primary"/>
+        <ToolbarItem Name="ConsumindoServico"     Text="Consulta CEP"            Activated="ConsumindoServico_Activated"        Order="Primary"/>
+
+        <ToolbarItem Name="DataPicker" Text="Exemplo: DatePicker"                Activated="DatePicker_Activated"               Order="Secondary"/>
+        <ToolbarItem Name="Reload" Text= "Exemplo: Reload"                       Activated="Reload_Activated"                   Order="Secondary"/>
+        <ToolbarItem Name="Picker" Text= "Exemplo: Picker"                       Activated="Picker_Activated"                   Order="Secondary"/>
+        <ToolbarItem Name="Texto" Text= "Exemplo: Tipos de Caixa de Texto"       Activated="Texto_Activated"                    Order="Secondary"/>
+        <ToolbarItem Name="Grid" Text= "Exemplo: Grid Layout"                    Activated="Grid_Activated"                     Order="Secondary"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout VerticalOptions="CenterAndExpand"   HorizontalOptions="CenterAndExpand"  Spacing="20" Padding="10,10,10,10">
+        <Label Text="Pós-Graduação em Desenvolvimento de Software Full Stack" FontSize="Medium"  FontAttributes="Bold" TextColor="Blue"/>
+        <Label Text="Programação Mobile: Xamarin" FontSize="Large" FontAttributes="Bold" TextColor="Black"/>
+        <Label Text="Faculdade Delta - Goiânia - GO" FontSize="Medium" TextColor="Blue"/>
+    </StackLayout>
+</ContentPage>

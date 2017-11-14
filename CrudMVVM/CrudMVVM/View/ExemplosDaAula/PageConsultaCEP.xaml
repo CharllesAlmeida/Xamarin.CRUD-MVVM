@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrudMVVM.View.ExemplosDaAula.PageConsultaCEP">
+    <ContentPage.Content >
+        <StackLayout Padding="10, 10, 10, 10">
+            <Label Text="Tela de Consulta CEP"   VerticalOptions="Center" BackgroundColor="WhiteSmoke"    HorizontalOptions="Center"      FontSize="Large"/>
+            <Entry x:Name="txtCEP" Placeholder="Digite o CEP"/>
+            <Button Text="Buscar CEP" Clicked="Button_Clicked"/>
+            <Label x:Name="lblResultado"/>
+            <StackLayout Padding="10, 10, 10, 10" BackgroundColor="WhiteSmoke">
+                <Label Text="Cidade:"  FontSize="16" TextColor="Blue"/>
+                <Label x:Name="Cidade" Text="" IsVisible="True"></Label>
+
+                <Label Text="Bairro:"  FontSize="16"  TextColor="Blue"/>
+                <Label x:Name="bairro" Text=""></Label>
+
+                <Label Text="UF:"  FontSize="16"  TextColor="Blue"/>
+                <Label x:Name="uf" Text=""></Label>
+
+                <Label Text="Complemento:" FontSize="16"  TextColor="Blue" />
+                <Label x:Name="complemento" Text=""></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
