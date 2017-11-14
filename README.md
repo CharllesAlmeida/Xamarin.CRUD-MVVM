@@ -50,13 +50,13 @@ Material utilizado na última aula da Disciplina: **Programação Mobile (Xamari
 
 **Tela utilizando o DatePicker do Xamarin.Forms**
 
-* Opção de utilizar o calendario ou digitar a data para preencher o campo.
+* Opção de utilizar o **calendário** ou digitar a data para preencher o campo.
 
 ![Tela de Menu de Opções](CrudMVVM/Imagens/PageDatePicker.JPG)
 
 **Tela utilizando o TimePicker do Xamarin.Forms**
 
-* Opção de utilizar o Regolio ou digitar a hora para preencher o campo.
+* Opção de utilizar o **relógio** ou digitar a hora para preencher o campo.
 
 ![Tela de Menu de Opções](CrudMVVM/Imagens/PageTimePicker.JPG)
 
